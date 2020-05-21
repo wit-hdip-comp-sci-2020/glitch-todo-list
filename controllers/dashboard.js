@@ -16,9 +16,17 @@ const dashboard = {
 
   addTodo(request, response) {
     const todo = {
+      id: uuid.v1(),
       title: request.body.title,
     };
     todoListStore.addTodo(todo);
+    response.redirect("/dashboard");
+  },
+
+  deleteTodo(request, response) {
+    const todoId = request.params.id;
+    logger.info(`Deleting todo ${todoId}`);
+    todoListStore.removeTodo(todoId);
     response.redirect("/dashboard");
   },
 };
