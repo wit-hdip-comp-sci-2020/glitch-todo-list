@@ -27,6 +27,10 @@ const todoListStore = {
     this.store.remove(this.collection, todo);
     this.store.save();
   },
+
+  getUserTodos(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
 };
 
 module.exports = todoListStore;
