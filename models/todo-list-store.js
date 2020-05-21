@@ -17,6 +17,16 @@ const todoListStore = {
     this.store.add(this.collection, todo);
     this.store.save();
   },
+
+  getTodo(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
+
+  removeTodo(id) {
+    const todo = this.getTodo(id);
+    this.store.remove(this.collection, todo);
+    this.store.save();
+  },
 };
 
 module.exports = todoListStore;
