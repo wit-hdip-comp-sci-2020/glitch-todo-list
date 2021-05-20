@@ -10,13 +10,13 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.6",
-    "express-handlebars": "^4.0.4",
-    "fs-extra": "^9.0.0",
-    "lodash": "^4.17.15",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^5.3.2",
+    "fs-extra": "^10.0.0",
+    "lodash": "^4.17.21",
     "lowdb": "^1.0.0",
-    "uuid": "^8.0.0",
-    "winston": "^3.2.1"
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
   },
   "engines": {
     "node": "12.x"
@@ -35,6 +35,6 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.3.0"
   }
 }
